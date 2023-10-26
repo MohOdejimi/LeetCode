@@ -22,18 +22,20 @@ Each element in nums appears exactly three times except for one element which ap
 
 // My Solution 
 
-let mapInterface = new Map()
-
-for (let i = 0; i < nums.length; i++) {
-  let currentNum = nums[i]
-  if (mapInterface.has(currentNum)) {
-    mapInterface.set(currentNum, (mapInterface.get(currentNum) + 1))
-  } else {
-    mapInterface.set(currentNum, 1)
+function singleNumberII(nums) {
+  let mapInterface = new Map()
+  
+  for (let i = 0; i < nums.length; i++) {
+    let currentNum = nums[i]
+    if (mapInterface.has(currentNum)) {
+      mapInterface.set(currentNum, (mapInterface.get(currentNum) + 1))
+    } else {
+      mapInterface.set(currentNum, 1)
+    }
   }
-}
-
-for (let j = 0; j < nums.length; j++) {
-  let currentNum = nums[j]
-  if (mapInterface.get(currentNum) === 1) return currentNum
+  
+  for (let j = 0; j < nums.length; j++) {
+    let currentNum = nums[j]
+    if (mapInterface.get(currentNum) === 1) return currentNum
+  }
 }
