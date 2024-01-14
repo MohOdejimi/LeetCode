@@ -1,7 +1,7 @@
 # LeetCode Exercises 
 
 
-A repository filled with LeetCode execises. Currently ranked in the top 900k+ in the global leaderboard, completed  70+ challenges and push at least 3 solutions every week.
+A repository filled with LeetCode execises. Currently ranked in the top 900k+ in the global leaderboard, completed  90+ challenges and push at least 6 solutions every week.
 Link to my profile: https://leetcode.com/mohodejimi/
 # How it's made :
 Tech used: Javascript and Go.
